@@ -80,6 +80,8 @@ source install/setup.bash
 ### How it works
 The `controller` node reads TF: `odom → base_link` and `dock_frame → base_link`. `dock_frame` is the tag frame that `apriltag_ros` publishes. It runs a state machine at 30 Hz and publishes velocity on `cmd_vel`.
 
+![](apriltag_docking/readme_resource/apriltag_docking.gif)
+
 | State | What the robot does |
 |---|---|
 | (empty) | Idle. Nothing is published. |
